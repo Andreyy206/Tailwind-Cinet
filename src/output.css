@@ -771,6 +771,8 @@ video {
 
 @media (min-width: 1024px) {
   .header ul.header_nav li.nav:hover ul.header_sub {
+    height: -moz-fit-content;
+    height: fit-content;
     --tw-translate-y: 1.25rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
     opacity: 1;
@@ -907,6 +909,7 @@ video {
 @media (min-width: 1024px) {
   .header ul.header_sub {
     position: absolute;
+    height: 0px;
     max-height: 50rem;
     width: 15rem;
     --tw-translate-y: 5rem;
@@ -1216,13 +1219,66 @@ video {
   transition-duration: 150ms;
 }
 
+/* POPULAR */
+
+.popular .popular_features h1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(0 94 127 / var(--tw-text-opacity));
+}
+
+.popular .popular_features p {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  padding-left: 1.25rem;
+}
+
+.popular .popular_description{
+}
+
+/* .popular .tns-nav{
+    @apply  flex justify-center gap-10
+    md:translate-y-[3000%] lg:translate-y-[3800%]
+} */
+
+@media (min-width: 1536px) {
+  .popular .tns-controls button {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    --tw-shadow: 0 10px 30px #2b2b2b;
+    --tw-shadow-colored: 0 10px 30px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+}
+
+@media (min-width: 1024px) {
+  .popular .tns-controls {
+    position: absolute;
+    left: 0px;
+    z-index: 100;
+    display: flex;
+    width: 90%;
+    --tw-translate-y: 500%;
+    --tw-translate-x: 5%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    justify-content: space-between;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:pt-\[10rem\] {
     padding-top: 10rem;
   }
 }
-
-
-
-         
 

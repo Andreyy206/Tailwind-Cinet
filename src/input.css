@@ -7,7 +7,6 @@
         @apply mx-auto max-w-[75rem] p-2;
     }
 
-
     @layer components{
         .header{
             @apply bg-light fixed w-full z-[999] 
@@ -147,7 +146,6 @@
 .banner .banner_item .banner_btn{
     @apply py-5
 }
-
 .banner .banner_item .banner_btn a{
     @apply flex items-center gap-2 relative w-fit mx-auto px-5 
     before:content-[''] before:w-14 before:h-14 before:bg-accent before:block before:rounded-full
@@ -161,10 +159,42 @@
 }
 .banner .banner_item .banner_btn a:hover i{
     @apply opacity-100 transition-all
+}
 
+/* POPULAR */
+.popular .popular_features h1{
+    @apply text-primary text-4xl font-bold py-10 flex justify-center ;
+}
+.popular .popular_features p{
+    @apply text -[-2rem] pl-4 mb-4 flex justify-center;
+}
+.popular .popular_list img{
+    @apply items-center;
+}
+.popular .popular_description h1{
+    text-semibold text-light 
+}
+.popular .tns-controls{
+    @apply bg-pink-600flex items-center justify-between
+}
+.popular .tns-controls button {
+     @apply bg-pink-700
 }
 
 
 
-         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

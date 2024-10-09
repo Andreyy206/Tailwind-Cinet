@@ -105,6 +105,50 @@
             </div>
         </div>
     </section>
+
+    <section class="popular">
+        <div class="container">
+            <div class="popular_wrapper">
+                <div class="popular_features">
+                    <h1>Popular Movies</h1>
+                    <p>Here are some of the most popular movies that our users & viewers enjoy.</p>
+                </div>
+                <div class="popular_list">
+                    <div class="popular_item">
+                        <img src="/dist/IMG/popular-euphoria.jpg" alt="">
+                            <h1>Euphoria</h1>
+                            <p><i class="fa-solid fa-calendar-day"></i><span>2021,DRAMA</span></p>
+                         
+                    </div>
+                    <div class="popular_item">
+                        <img src="/dist/IMG/popular-disconnected.jpg" alt="">
+                            <h1>Disconnected</h1>
+                            <p><i class="fa-solid fa-calendar-day"></i><span>2021,DRAMA</span></p>
+                         </div>
+                    <div class="popular_item">
+                        <img src="/dist/IMG/popular-paradigm.jpg" alt="">
+                            <h1>Paradigm Lost</h1>
+                            <p><i class="fa-solid fa-calendar-day"></i><span>2021,DOCUMENTARY,SPORT</span></p>
+                    </div>
+                    <div class="popular_item">
+                        <img src="/dist/IMG/popular-alita.jpg" alt="">
+                            <h1>Alita:Battle Angel</h1>
+                            <p><i class="fa-solid fa-calendar-day"></i><span>2021,ACTION</span></p>
+                    </div>
+                    <div class="popular_item">
+                        <img src="/dist/IMG/popular-black.jpg" alt="">
+                            <h1>Black Mirror</h1>
+                            <p><i class="fa-solid fa-calendar-day"></i><span>2021,SCI-FI</span></p>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
     <script src="/dist/js/toggleMenu.js"></script>
     <script src="/dist/js/headerDropDown.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
@@ -124,9 +168,14 @@
         }
     }
   });
+  var slider = tns({
+    container: '.popular_list',
+    items: 1,
+    slideBy: 'page',
+    autoplay: true,
+    controlsText:['<i class="fa-solid fa-chevron-left"></i>',
+                 '<i class="fa-solid fa-chevron-right"></i>'],
+  });
   </script>
-
-
-
 </body>
 </html>
