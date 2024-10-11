@@ -57,7 +57,7 @@
   .header ul.header_nav li.nav:hover ul.header_sub {
     @apply lg:translate-y-5 lg:opacity-100 lg:h-fit;
   }
-}
+
 .header ul.header_nav li.nav a.navA {
   @apply flex items-center justify-between px-4 py-3 hover:bg-accent hover:text-light font-semibold text-lg
             lg:text-sm lg:justify-normal lg:gap-2 lg:hover:bg-transparent lg:hover:text-dark
@@ -273,27 +273,171 @@
     @apply h-[250px] bg-no-repeat bg-categ-5 bg-cover
 }
 
+/* APPS */
+.apps{
+  @apply bg-gray-200;
+}
+.apps .apps_wrapper{
+  @apply flex
+}
+.apps h2{
+  @apply font-semibold text-2xl text-primary mt-10 mb-3 ;
+}
+.apps h1{
+  @apply font-bold text-4xl text-primary mb-5;
+}
+.apps .apps_bearer{
+  @apply lg:flex
+}
+.apps .apps_item h4{
+  @apply text-gray-500 font-normal text-xl pb-6 ;
+}
+.apps_btn{
+  @apply flex translate-x-3 
+}
+.apps_btn a{
+  @apply flex ;
+}
+.apps_btn i{
+  @apply text-3xl translate-x-4 translate-y-1;
+}
+.apps_btn i:first-child(){
+  @apply text-gray-600
+}
+.apps .apps_presentation{
+  @apply mt-14;
+}
+.apps .apps_playstore-text{
+  @apply items-center translate-x-7
+}
+.apps .apps_playstore-text p{
+  @apply text-sm font-semibold text-gray-600;
+}
+.apps .apps_playstore-text h3{
+  @apply text-lg font-semibold 
+}
+.apps .apps_wrapper{
+  @apply lg:flex lg:mt-20
+}
+
 /* NEWS */
 .news{
     @apply bg-primary 
 }
-.news .news_item{ 
-   @apply relative mb-28
-    lg:grid lg:grid ;
+.news .news_features{
+  @apply lg:flex lg:grid lg:grid-cols-4 lg:gap-8;
 }
-.news_item h1{
-    @apply font-semibold text-3xl text-light text-center mt-8 mb-16
+.news .news_item{ 
+   @apply relative mb-28  
+    
+}
+.news_title h1{
+    @apply font-bold text-5xl text-light text-center mt-8 mb-20 pt-10
 }
 .news .news_item img{
    @apply mx-auto w-[25rem] h-[18rem] relative 
    lg:w-auto ;
+}.news .news_item img:hover{
+  @apply lg:translate-y-4 lg:transition-transform lg:ease-linear
 }
+
+
 .news .news_description{
-    @apply  bg-light mb-10 max-w-80 z-50 h-[8rem] absolute -bottom-24 left-[6rem] pl-6
+    @apply  bg-light mb-10 max-w-80 z-50 h-[8rem] absolute -bottom-24 left-[6rem] pl-6 
+    lg:translate-y-8  lg:-translate-x-20 lg:w-60 lg:max-w-80 lg:pb-40 lg:transition-transform
 }
+.news .news_description:hover{
+  @apply lg:translate-y-4 
+}
+.news .news_description h2:hover{
+  @apply lg:text-accent 
+} 
+
 .news .news_description h2{
-    @apply text-primary font-semibold text-[20px] pb-4 pt-5
+    @apply text-primary font-semibold text-[20px] pb-4 pt-5 lg:max-w-36 lg:hover:before:bg-accent
 }
 .news .news_description p{
     @apply text-gray-600 font-medium 
+}
+
+/* FOOTER */
+.footer{
+  @apply bg-accent
+}
+.footer_options{
+  @apply text-light
+}
+/* .footer .footer_options:hover{
+  @apply text-gray-500
+} */
+
+.footer_index{
+  @apply grid lg:grid-cols-3 gap-[10rem]
+}
+.footer_options h1{
+  @apply text-2xl font-normal mt-6 
+}
+.footer_options li{
+  @apply font-light text-[19px] pt-4
+}
+.footer .footer_items:last-child{
+  @apply flex gap-24
+}
+.footer .footer_end{
+  @apply flex flex-col items-center
+  lg:grid lg:grid-cols-[1fr_2fr_1fr] lg:mt-[9rem]
+}
+.footer .footer_end img{
+  @apply w-28
+}
+.footer .footer_end p{
+  @apply text-light text-[18px] pl-[6rem]
+}
+.footer .footer_social{
+  @apply text-gray-200 text-[1.6rem] flex gap-6 border-light
+}
+.footer .footer_social:nth-child():hover{
+  @apply text-transparent
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@layer utilities{
+  .btn{
+    @apply inline-block text-light text-center rounded-[5rem] border-opacity-50 ;
+}
+.btn.bg--dark{
+  @apply bg-dark w-48 ;
+}
+.btn:hover{
+  @apply bg-zinc-500;
+}
+.btn.bg--transparent{
+  @apply bg-transparent border-light;
+}
 }
